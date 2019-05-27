@@ -11,6 +11,7 @@ private:
 	map<string, Currency> currencies;
 
 public:
+	void printOneCurrency(string name);
 	void printAllCurrencies();
 	void addCurrency(double sellPrice, double buyPrice, string name);
 	double calculateBuyPrice(string name, double amount);

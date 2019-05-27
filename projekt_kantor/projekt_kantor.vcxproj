@@ -151,13 +151,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Country.h" />
     <ClInclude Include="Currency.h" />
     <ClInclude Include="Exchange.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Country.cpp" />
     <ClCompile Include="Currency.cpp" />
     <ClCompile Include="Exchange.cpp" />
     <ClCompile Include="pch.cpp">

@@ -27,6 +27,11 @@ void Currency::setBuyPrice(double newPrice)
 	this->buyPrice = newPrice;
 }
 
+string Currency::toString()
+{
+	return this->name + " sell price: " + to_string(this->sellPrice) + " buy price: " + to_string(this->buyPrice); //to_string zmienia double na stringa, cala metoda zwraca stringowa reprezentacje obiektu
+}
+
 Currency::Currency()
 {
 }
