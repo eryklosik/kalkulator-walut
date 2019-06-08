@@ -4,12 +4,12 @@
 
 void Exchange::printOneCurrency(string name)
 {
-	map<string, Currency>::iterator search = currencies.find(name); //ustaw iteratr na 'szukana walute'
+	map<string, Currency>::iterator search = currencies.find(name); //ustaw iterator na 'szukana walute'
 	if (search == currencies.end()) { //jesli iterator=end
 		cout << "No such currency in database" << endl; //wypisz komunikat o braku
 	}
 	else {
-		cout << search->second.toString() << endl; //komunikat wypisujacy toStringa szukanej waluty
+		cout << search->second.toString() << endl; //komunikat wypisujacy 'toStringa' szukanej waluty
 	}
 }
 

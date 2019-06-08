@@ -2,10 +2,17 @@
 #include <iostream>
 #include "Country.h"
 #include "Exchange.h"
+#include "CurrencyDownloader.h"
 using namespace std;
 
 int main()
 {
+	
+	CurrencyDownloader *cd=new CurrencyDownloader();
+	cd->downloadXML();
+	cd->readCurriencies();
+
+	/*
 	Exchange *kantor = new Exchange();
 	kantor->addCurrency(4.84,4.88,"GBP"); //sprzedaz,kupno(od strony klienta)
 	kantor->addCurrency(3.82,3.85,"USD");
@@ -14,4 +21,5 @@ int main()
 	cout << "buy 100GBP: " << kantor -> calculateBuyPrice("GBP", 100) << "PLN"<< endl; //sprawdzenie dzialania
 	cout << "sell 100GBP: " << kantor->calculateSellPrice("GBP", 100) << "PLN" << endl;
 	return 0;
+	*/
 }

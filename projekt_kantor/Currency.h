@@ -15,7 +15,7 @@ public:
 	string getName();
 	void setSellPrice(double newPrice);
 	void setBuyPrice(double newPrice);
-	string toString(); //wszystko co mamy wyswietla
+	string toString(); //wyswietla wszystkie informacje o walucie
 	Currency();
 	Currency(double sellPrice, double buyPrice, string name);
 	~Currency();

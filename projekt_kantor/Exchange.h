@@ -9,7 +9,6 @@ class Exchange
 {
 private:
 	map<string, Currency> currencies;
-
 public:
 	void printOneCurrency(string name);
 	void printAllCurrencies();
