@@ -37,7 +37,7 @@ double Exchange::calculateBuyPrice(string name, double amount)
 {
 	map<string, Currency>::iterator search = currencies.find(name); //sprawdz czy jest w bazie
 	if (search == currencies.end()) { //jesli nie ma to zwroc '0'
-		return 0.0; //zakladam, ze jesli funkcja zwroci '0' to nie ma tej waluty, w razie czego mozna rzucic wyjatek
+		throw "No such currency in database"; //jesli nie ma waluty, rzuc wyjatek
 	}
 	else {
 		return amount * currencies[name].getBuyPrice(); //zwracamy ile potrzeba PLN do zakupu tyle i tyle USD
@@ -48,7 +48,7 @@ double Exchange::calculateSellPrice(string name, double amount)
 {
 	map<string, Currency>::iterator search = currencies.find(name);
 	if (search == currencies.end()) {
-		return 0.0;
+		throw "No such currency in database";
 	}
 	else {
 		return amount * currencies[name].getSellPrice(); //zwracamy ile sie dostanie PLN za tyle i tyle USD

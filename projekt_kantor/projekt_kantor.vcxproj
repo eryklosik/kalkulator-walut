@@ -153,14 +153,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Command.h" />
     <ClInclude Include="Currency.h" />
-    <ClInclude Include="CurrencyDownloader.h" />
     <ClInclude Include="Exchange.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Command.cpp" />
     <ClCompile Include="Currency.cpp" />
-    <ClCompile Include="CurrencyDownloader.cpp" />
     <ClCompile Include="Exchange.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
